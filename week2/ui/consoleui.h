@@ -24,7 +24,7 @@ enum commandType {
     none,
     scientist,
     computer,
-    link
+    scientistComputerLink
 };
 
 class ConsoleUI

@@ -51,7 +51,7 @@ void ConsoleUI::display()
             {
                 displayAddComputerMenu();
             }
-            else if (lastCommandType == commandType::link)
+            else if (lastCommandType == commandType::scientistComputerLink)
             {
                 displayAddScientistComputerMenu();
             }
@@ -184,7 +184,7 @@ void ConsoleUI::noneCommandHandler(string userInput)
     }
     else if (userInput == "3")
     {
-        lastCommandType = commandType::link;
+        lastCommandType = commandType::scientistComputerLink;
     }
     else
     {
@@ -204,7 +204,7 @@ void ConsoleUI::addCommandHandler(string userInput)
     {
         success = addComputer(userInput);
     }
-    else if (lastCommandType == commandType::link)
+    else if (lastCommandType == commandType::scientistComputerLink)
     {
         success = addLink(userInput);
     }
